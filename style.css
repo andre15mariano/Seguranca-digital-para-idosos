@@ -1,0 +1,35 @@
+/* --- SISTEMA DE DESIGN (Paleta de Cores e Acessibilidade) --- */
+:root {
+  --cor-escura: #1A312C;         /* Verde escuro - Alta legibilidade */
+  --cor-primaria: #428475;       /* Teal - Botões primários */
+  --cor-destaque: #89D7B7;       /* Verde claro pastel - Detalhes e Destaques */
+  --cor-fundo: #FFF4E1;          /* Creme quente - Confortável para os olhos */
+  --cor-branca: #FFFFFF;
+  
+  /* Fontes bem grandes e legíveis para idosos */
+  --tamanho-fonte-base: 19px;
+  --tamanho-fonte-titulo: 1.9rem;
+  --tamanho-fonte-subtitulo: 1.4rem;
+  --tamanho-fonte-botao: 1.15rem;
+  --espacamento: 20px;
+  
+  --velocidade-transicao: 0.25s;
+}
+
+/* --- LIMPEZA E AJUSTES GERAIS --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-escura);
+  font-size: var(--tamanho-fonte-base);
+  line-height: 1.6;
+  padding-bottom: 40px;
+}
+
+/* --- TRUQUE CSS: Modo Texto Super Ampliado (100%
