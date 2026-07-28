@@ -1,1 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Segurança Digital - Melhor Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CONTROLES INVISÍVEIS PARA ALTERNAR ACESSIBILIDADE VIA CSS -->
+    <input type="checkbox" id="toggle-fonte" class="sr-only" aria-label="Alternar Tamanho da Fonte">
+    <input type="checkbox" id="toggle-contraste" class="sr-only" aria-label="Alternar Alto Contraste">
+
+    <!-- ENVOLTÓRIO PRINCIPAL DA APLICAÇÃO -->
+    <div class="app-wrapper">
+
+        <!-- BARRA SUPERIOR DE ACESSIBILIDADE -->
+        <div class="barra-acessibilidade">
+            <div class="container">
+                <span><strong>Opções para facilitar sua leitura:</strong></span>
+                <div class="controles-acessibilidade">
+                    <label for="toggle-fonte" class="btn-acessibilidade" tabindex="0" role="button"
+                        aria-pressed="false">
+                        <span aria-hidden="true">A+</span> Letra Maior
+                    </label>
+                    <label for="toggle-contraste" class="btn-acessibilidade" tabindex="0" role="button"
+                        aria-pressed="false">
+                        <span aria-hidden="true">◑</span> Alto Contraste
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- CABEÇALHO PRINCIPAL -->
+        <header>
+            <div class="container">
+                <h1>Segurança Digital para a Melhor Idade</h1>
+                <p>Seu guia prático para usar o celular e a internet de forma simples, segura e protegida.</p>
+            </div>
+        </header>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="container">
+
+            <!-- NAVEGAÇÃO RÁPIDA -->
+            <nav aria-label="Menu rápido por tópicos">
+                <ul class="menu-navegacao">
+                    <li><a href="#dicas" class="btn-nav">1. Regras de Ouro</a></li>
+                    <li><a href="#direitos" class="btn-nav">2. Seus Direitos</a></li>
+                    <li><a href="#golpes" class="btn-nav">3. Golpes Comuns</a></li>
+                    <li><a href="#senhas" class="btn-nav">4. Criar Senhas</a></li>
+                    <li><a href="#emergencia" class="btn-nav">5. Ajuda e Canais</a></li>
+                </ul>
+            </nav>
+
+            <!-- SEÇÃO 1: REGRAS DE OURO DA SEGURANÇA -->
+            <section id="dicas" aria-labelledby="titulo-dicas">
+                <h2 id="titulo-dicas" class="titulo-secao">
+                    <span aria-hidden="true">🛡️</span> 1. Regras de Ouro da Segurança
+                </h2>
+                <div class="grid-cards">
+                    <article class="card">
+                        <span class="card-icone" aria-hidden="true">🔒</span>
+                        <h3>Senhas são Pessoais</h3>
+                        <p>Nunca compartilhe suas senhas com ninguém. Nem funcionários de banco nem familiares têm o
+                            direito de exigir sua senha.</p>
+                    </article>
+
+                    <article class="card">
+                        <span class="card-icone" aria-hidden="true">⏸️</span>
+                        <h3>Pare e Pense</h3>
+                        <p>Golpistas tentam te assustar criando urgência. Antes de tomar qualquer atitude rápida,
+                            respire e consulte alguém de confiança.</p>
+                    </article>
+
+                    <article class="card">
+                        <span class="card-icone" aria-hidden="true">🚫</span>
+                        <h3>Não Clique em Links</h3>
+                        <p>Recebeu uma mensagem estranha com um endereço de site? Não clique. Apague a mensagem para
+                            garantir sua segurança.</p>
+                    </article>
+
+                    <article class="card">
+                        <span class="card-icone" aria-hidden="true">📞</span>
+                        <h3>Desconfie de Ligações</h3>
+                        <p>Se ligarem dizendo ser do banco pedindo confirmação de dados ou transferência de teste,
+                            desligue o telefone na hora.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- SEÇÃO 2: DIREITOS DE SEGURANÇA DIGITAL DO IDOSO -->
+            <section id="direitos" aria-labelledby="titulo-direitos">
+                <h2 id="titulo-direitos" class="titulo-secao">
+                    <span aria-hidden="true">⚖️</span> 2. Seus Direitos no Mundo Digital
+                </h2>
+                <div class="cartao-destaque">
+                    <p>Como consumidor e cidadão, você possui direitos garantidos por lei ao utilizar serviços de
+                        internet e bancos:</p>
+
+                    <ul class="lista-direitos">
+                        <li>
+                            <strong>Direito ao Ressarcimento em Fraudador Pix (MED):</strong>
+                            <p>Caso seja vítima de um golpe no Pix, o banco tem a obrigação de acionar o Mapeamento
+                                Especial de Devolução para tentar reaver seu dinheiro rapidamente.</p>
+                        </li>
+                        <li>
+                            <strong>Proteção contra Empréstimos Não Solicitados:</strong>
+                            <p>É ilegal cadastrar empréstimos consignados ou serviços sem sua autorização expressa e
+                                clara. Qualquer cobrança indevida deve ser cancelada e devolvida.</p>
+                        </li>
+                        <li>
+                            <strong>Atendimento Humano e Prioritário:</strong>
+                            <p>Você tem o direito de ser atendido por uma pessoa de verdade nos canais do banco ou
+                                órgãos públicos, caso não consiga usar o aplicativo ou robô de atendimento.</p>
+                        </li>
+                        <li>
+                            <strong>Proteção de Dados Pessoais (LGPD):</strong>
+                            <p>Empresas não podem vender nem compartilhar seu número de telefone, CPF ou dados bancários
+                                sem a sua permissão prévia.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SEÇÃO 3: GOLPES MAIS COMUNS -->
+            <section id="golpes" aria-labelledby="titulo-golpes">
+                <h2 id="titulo-golpes" class="titulo-secao">
+                    <span aria-hidden="true">🔍</span> 3. Conheça os Golpes mais Comuns
+                </h2>
+
+                <!-- GOLPE 1 -->
+                <details>
+                    <summary>
+                        <span>O Golpe do Falso Familiar (WhatsApp)</span>
+                    </summary>
+                    <div class="conteudo-golpe">
+                        <p><strong>Como acontece:</strong> Uma pessoa manda mensagem com a foto do seu filho ou neto
+                            usando um número novo, dizendo que trocou de celular e precisa de um Pix urgente.</p>
+
+                        <div class="alerta-caixa">
+                            <h4><span aria-hidden="true">⚠️</span> O que fazer:</h4>
+                            <p>Nunca envie dinheiro imediatamente. Pegue o telefone e faça uma ligação para o número
+                                antigo do seu familiar para checar se é verdade.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- GOLPE 2 -->
+                <details>
+                    <summary>
+                        <span>Falsa Central do Banco por Telefone</span>
+                    </summary>
+                    <div class="conteudo-golpe">
+                        <p><strong>Como acontece:</strong> Uma gravação ou pessoa liga dizendo que houve uma compra
+                            suspeita no seu cartão e pede para você confirmar sua senha ou fazer uma transferência.</p>
+
+                        <div class="alerta-caixa">
+                            <h4><span aria-hidden="true">⚠️</span> O que fazer:</h4>
+                            <p>Desligue a ligação imediatamente. O banco nunca liga solicitando senhas nem pede para
+                                você fazer transferências de segurança.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- GOLPE 3 -->
+                <details>
+                    <summary>
+                        <span>Mensagens de Falsas Encomendas (SMS)</span>
+                    </summary>
+                    <div class="conteudo-golpe">
+                        <p><strong>Como acontece:</strong> Você recebe um texto dizendo que tem uma encomenda retida ou
+                            uma taxa pendente dos Correios com um link para pagar.</p>
+
+                        <div class="alerta-caixa">
+                            <h4><span aria-hidden="true">⚠️</span> O que fazer:</h4>
+                            <p>Apague a mensagem. Não clique no link fornecido nem insira seus dados de cartão de
+                                crédito.</p>
+                        </div>
+                    </div>
+                </details>
+            </section>
+
+            <!-- SEÇÃO 4: PASSO A PASSO PARA SENHAS SEGURAS -->
+            <section id="senhas" aria-labelledby="titulo-senhas">
+                <h2 id="titulo-senhas" class="titulo-secao">
+                    <span aria-hidden="true">📝</span> 4. Como Criar uma Senha Forte
+                </h2>
+
+                <ol class="lista-passos">
+                    <li class="item-passo">
+                        <div>
+                            <strong>Não use dados óbvios:</strong>
+                            <p>Evite datas de aniversário, seu próprio nome, nome de animais de estimação ou sequências
+                                fáceis como "123456".</p>
+                        </div>
+                    </li>
+                    <li class="item-passo">
+                        <div>
+                            <strong>Crie uma Frase Secreta:</strong>
+                            <p>Junte palavras que só você conhece. Exemplo: <em>"CafeComBiscoitoEm2024!"</em> (É fácil
+                                de lembrar e muito difícil de adivinhar).</p>
+                        </div>
+                    </li>
+                    <li class="item-passo">
+                        <div>
+                            <strong>Guarde em Papel num Local Seguro:</strong>
+                            <p>É mais seguro anota-la em um caderno mantido dentro de casa do que salvar blocos de notas
+                                no próprio celular.</p>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- SEÇÃO 5: O QUE FAZER EM EMERGÊNCIAS -->
+            <section id="emergencia" aria-labelledby="titulo-emergencia">
+                <h2 id="titulo-emergencia" class="titulo-secao">
+                    <span aria-hidden="true">🆘</span> 5. O que Fazer em Caso de Golpe ou Fraude
+                </h2>
+
+                <div class="cartao-emergencia">
+                    <p><strong>Se você desconfia que caiu em um golpe, aja rapidamente sem pânico:</strong></p>
+
+                    <ul class="lista-telefones">
+                        <li>
+                            <span>1. Bloqueie os cartões e a conta do banco:</span>
+                            <span class="numero-telefone">Ligue no número atrás do seu cartão</span>
+                        </li>
+                        <li>
+                            <span>2. Registre um B.O. (Boletim de Ocorrência):</span>
+                            <span class="numero-telefone">Ligue 190 (Polícia) ou vá à delegacia</span>
+                        </li>
+                        <li>
+                            <span>3. Caso o golpe seja no WhatsApp, avise amigos e familiares para não
+                                responderem.</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- RODAPÉ -->
+        <footer>
+            <div class="container">
+                <p><strong>Guia Acessível de Segurança Digital para a Melhor Idade</strong></p>
+                <p>Desenvolvido exclusivamente com HTML e CSS para máxima acessibilidade.</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
