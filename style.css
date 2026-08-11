@@ -290,6 +290,9 @@ nav {
 /* SEÇÕES E CARDS */
 section {
     margin-bottom: 50px;
+    position: relative;
+    top: 50%;
+    left: 50%;
 }
 
 .titulo-secao {
