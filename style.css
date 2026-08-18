@@ -288,12 +288,6 @@ nav {
 }
 
 /* SEÇÕES E CARDS */
-section {
-    margin-bottom: 50px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-}
 
 .titulo-secao {
     font-size: 1.7rem;
@@ -534,4 +528,12 @@ footer {
         flex-direction: column;
         align-items: flex-start;
     }
+}
+
+#emergencia {
+    margin-bottom: 50px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
