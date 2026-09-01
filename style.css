@@ -9,11 +9,11 @@
     --cor-primaria: #285A48;
     --cor-secundaria: #408A71;
     --cor-clara-destaque: #B0E4CC;
-
+    
     --cor-borda: #408A71;
     --cor-alerta: #8A2525;
     --cor-alerta-fundo: #FDF2F2;
-
+    
     --fonte-familia: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --tamanho-fonte-base: 20px;
     --largura-maxima: 920px;
@@ -23,9 +23,7 @@
 }
 
 /* RESET E CONFIGURAÇÕES BÁSICAS */
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -62,13 +60,12 @@ body {
    ========================================================================== */
 
 /* Alternar Fonte Ampliada */
-#toggle-fonte:checked~.app-wrapper {
-    font-size: 1.25rem;
-    /* Aumenta 25% */
+#toggle-fonte:checked ~ .app-wrapper {
+    font-size: 1.25rem; /* Aumenta 25% */
 }
 
 /* Alternar Modo Alto Contraste (Otimizado para Idosos com Paleta Verde/Menta) */
-#toggle-contraste:checked~.app-wrapper {
+#toggle-contraste:checked ~ .app-wrapper {
     --cor-fundo: #050C0B;
     --cor-superficie: #000000;
     --cor-texto-escuro: #FFFFFF;
@@ -79,66 +76,66 @@ body {
     --foco-visivel: 4px solid #FFFF00;
 }
 
-#toggle-contraste:checked~.app-wrapper .barra-acessibilidade {
+#toggle-contraste:checked ~ .app-wrapper .barra-acessibilidade {
     background-color: #000000;
     border-bottom: 2px solid #B0E4CC;
 }
 
-#toggle-contraste:checked~.app-wrapper .btn-acessibilidade {
+#toggle-contraste:checked ~ .app-wrapper .btn-acessibilidade {
     background-color: #000000;
     color: #B0E4CC;
     border: 2px solid #B0E4CC;
 }
 
-#toggle-contraste:checked~.app-wrapper header {
+#toggle-contraste:checked ~ .app-wrapper header {
     background-color: #000000;
     border-bottom: 5px solid #B0E4CC;
 }
 
-#toggle-contraste:checked~.app-wrapper header h1 {
+#toggle-contraste:checked ~ .app-wrapper header h1 {
     color: #B0E4CC;
 }
 
-#toggle-contraste:checked~.app-wrapper header p {
+#toggle-contraste:checked ~ .app-wrapper header p {
     color: #FFFFFF;
 }
 
-#toggle-contraste:checked~.app-wrapper .btn-nav {
+#toggle-contraste:checked ~ .app-wrapper .btn-nav {
     background-color: #000000;
     color: #B0E4CC;
     border: 3px solid #B0E4CC;
     font-weight: bold;
 }
 
-#toggle-contraste:checked~.app-wrapper .btn-nav:hover {
+#toggle-contraste:checked ~ .app-wrapper .btn-nav:hover {
     background-color: #B0E4CC;
     color: #000000;
 }
 
-#toggle-contraste:checked~.app-wrapper .card,
-#toggle-contraste:checked~.app-wrapper details,
-#toggle-contraste:checked~.app-wrapper .item-passo,
-#toggle-contraste:checked~.app-wrapper .cartao-destaque {
+#toggle-contraste:checked ~ .app-wrapper .card,
+#toggle-contraste:checked ~ .app-wrapper details,
+#toggle-contraste:checked ~ .app-wrapper .item-passo,
+#toggle-contraste:checked ~ .app-wrapper .cartao-destaque {
     border: 3px solid #B0E4CC;
     background-color: #000000;
     color: #FFFFFF;
 }
 
-#toggle-contraste:checked~.app-wrapper summary {
+#toggle-contraste:checked ~ .app-wrapper summary {
     background-color: #000000;
     color: #B0E4CC;
 }
 
-#toggle-contraste:checked~.app-wrapper summary::after {
+#toggle-contraste:checked ~ .app-wrapper summary::after {
     color: #B0E4CC;
 }
 
-#toggle-contraste:checked~.app-wrapper details[open] summary {
+#toggle-contraste:checked ~ .app-wrapper details[open] summary {
     background-color: #0A1C18;
     border-bottom: 2px solid #B0E4CC;
 }
 
-#toggle-contraste:checked~.app-wrapper .alerta-caixa {
+#toggle-contraste:checked ~ .app-wrapper .alerta-caixa {
     background-color: #1A0000;
     border-left: 8px solid #FF6B6B;
     border: 2px solid #FF6B6B;
@@ -146,23 +143,23 @@ body {
     color: #FFFFFF;
 }
 
-#toggle-contraste:checked~.app-wrapper .alerta-caixa h4 {
+#toggle-contraste:checked ~ .app-wrapper .alerta-caixa h4 {
     color: #FF6B6B;
 }
 
-#toggle-contraste:checked~.app-wrapper .cartao-emergencia {
+#toggle-contraste:checked ~ .app-wrapper .cartao-emergencia {
     background-color: #000000;
     border: 3px solid #FF6B6B;
     color: #FFFFFF;
 }
 
-#toggle-contraste:checked~.app-wrapper .numero-telefone {
+#toggle-contraste:checked ~ .app-wrapper .numero-telefone {
     background-color: #B0E4CC;
     color: #000000;
     font-weight: bold;
 }
 
-#toggle-contraste:checked~.app-wrapper footer {
+#toggle-contraste:checked ~ .app-wrapper footer {
     background-color: #000000;
     border-top: 3px solid #B0E4CC;
     color: #FFFFFF;
@@ -288,6 +285,9 @@ nav {
 }
 
 /* SEÇÕES E CARDS */
+section {
+    margin-bottom: 50px;
+}
 
 .titulo-secao {
     font-size: 1.7rem;
@@ -523,17 +523,9 @@ footer {
         flex-direction: column;
         gap: 12px;
     }
-
+    
     .lista-telefones li {
         flex-direction: column;
         align-items: flex-start;
     }
-}
-
-#emergencia {
-    margin-bottom: 50px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
