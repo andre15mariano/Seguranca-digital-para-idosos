@@ -540,5 +540,5 @@ footer {
     padding: 2%;
     border-radius: 24px;
     background-color: #091413;
-
+    margin: 0 !important;
 }
